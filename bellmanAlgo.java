@@ -68,7 +68,7 @@ public class bellmanAlgo {
 
         distance[s] = 0;
 
-        for (int i = 1; i < V - 1; i++) {
+        for (int i = 1; i <= V - 1; i++) {
 
             for (int k = 1; k <= E; k++) {
 
@@ -111,3 +111,4 @@ public class bellmanAlgo {
     }
 
 }
+
