@@ -35,7 +35,7 @@ public class RSADemo {
         mlen=msg.length();
         for(int i=0;i<mlen;i++)
           pt[i]=msg.charAt(i);
-        System.out.println("ASCII values nof PT array is:");
+        System.out.println("ASCII values of PT array is:");
         for(int i=0;i<mlen;i++)
           System.out.println(pt[i]);
         System.out.println("Enryption: Cypher Text Obtained");
@@ -72,4 +72,5 @@ public class RSADemo {
       res=((res*base)%n);
     return res;
   }
+
 }
