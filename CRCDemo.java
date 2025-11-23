@@ -48,8 +48,9 @@ public class CRCDemo {
             // Flip the bit
             t[x] = (t[x] == '0') ? '1' : '0';
             System.out.println("Erroneous data : " + new String(t));
-            crc();
+            
         }
+        crc();
 
         // Computation at receiver side
         flag = 0;
@@ -88,4 +89,5 @@ public class CRCDemo {
             cs[c] = (cs[c] == g[c]) ? '0' : '1';
         }
     }
+
 }
