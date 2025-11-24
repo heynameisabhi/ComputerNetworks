@@ -1,0 +1,29 @@
+commands to be runned in the terminal
+step1: mkdir [folder_name]
+
+step2: gedit s1.tcl 
+step3: type the code inside s1.tcl then
+step4: gedit s1.awk
+step5: type the code inside s1.awk then
+step6: after you type your code come to the terminal and run this code: sudo ns s1.tcl
+step7: After you run that code youll be asked to enter the password . enter ubuntu.
+step8: youll get an interface. press below where there is an empty space.
+step9: press play button at the top.
+step10: keep changing the Mb values like this
+
+$ns duplex-link $n0 $n1 0.25Mb 10ms DropTail
+$ns duplex-link $n1 $n2 1Mb 10ms DropTail
+step11:run this 
+gedit s1graph
+step12: enter this values in that file
+0.25 0
+0.50 0
+0.75 0
+1.00 0
+1.25 9
+1.50 12
+1.75 15
+2.00 13
+step13: then run this
+xgraph -x "Bandwidth(Mbps)" -y "No of packets dropped" -t "Performance analysis" s1graph
+this will give u a graph.
